@@ -1,0 +1,197 @@
+html,
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 15, 112, 0.4);
+}
+.n1{
+    display: flex;
+}
+
+img{
+height: 50px;
+margin-top: 25px;
+margin-left: 15px;
+flex: 20%;
+
+
+}
+.h1{
+    flex:70%;
+    
+    }
+header {
+  color: rgb(0, 13, 155);
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-style:oblique;
+  text-decoration:underline;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+ 
+}
+
+#navbar li {
+  color: #4d4e53;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+table{
+    border: #4d4e53;
+    border-style: double;
+}
+
+section{width: 100%;
+    display: flex;
+}
+section article {
+  color: #4d4e53;
+  margin: 10px;
+  font-size: 0.96em;
+  flex:50%;
+}
+section aside{
+    flex:49%;
+}
+
+
+
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+}
+
+input[type=checkbox] {
+    display:none;
+}
+input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("hitler.jpeg") no-repeat;
+    height: 125px;
+    width: 125px;
+    background-size: 50%;
+}
+
+input[type=checkbox]:checked + label {
+    background:url("hitler.jpeg") no-repeat;
+   
+    display:inline-block;
+    background-size: 50%;
+    border:3px solid green;
+}
+input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("ferdinand.jpeg") no-repeat;
+    height: 125px;
+    width: 125px;
+    background-size: 50%;
+}
+
+input[type=checkbox]:checked + label {
+    background:url("ferdinand.jpeg") no-repeat;
+   
+    display:inline-block;
+    background-size: 50%;
+    border:3px solid green;
+}
+input[type=checkbox] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("hirst.jpeg") no-repeat;
+    height: 125px;
+    width: 125px;
+    background-size: 50%;
+}
+
+input[type=checkbox]:checked + label {
+    background:url("hirst.jpeg") no-repeat;
+   
+    display:inline-block;
+    background-size: 50%;
+    border:3px solid green;
+}
+
+input[type=checkbox][name="coccinelle"] + label {
+    display:inline-block;
+    padding: 0 0 0 0px;
+    background:url("coccinelle.jpeg") no-repeat;
+    height: 125px;
+    width: 125px;
+    background-size: 50%;
+}
+
+input[type=checkbox][name="coccinelle"]:checked + label {
+    background:url("coccinelle.jpg") no-repeat;
+   
+    display:inline-block;
+    background-size: 50%;
+    border:3px solid green;
+}
